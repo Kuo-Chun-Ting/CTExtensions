@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTExtensions.SimpleType", "CTExtensions.SimpleType\CTExtensions.SimpleType.csproj", "{C415FB82-D054-4C30-907C-9F0FBFB482E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CTExtensions.TestConsole", "CTExtensions.TestConsole\CTExtensions.TestConsole.csproj", "{1791FFE7-9673-4989-A15F-7FFBA3F3D03C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CTExtensions", "CTExtensions\CTExtensions.csproj", "{A775915C-27B3-4DCD-AEDE-A4F622112B14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C415FB82-D054-4C30-907C-9F0FBFB482E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C415FB82-D054-4C30-907C-9F0FBFB482E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C415FB82-D054-4C30-907C-9F0FBFB482E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C415FB82-D054-4C30-907C-9F0FBFB482E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1791FFE7-9673-4989-A15F-7FFBA3F3D03C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1791FFE7-9673-4989-A15F-7FFBA3F3D03C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1791FFE7-9673-4989-A15F-7FFBA3F3D03C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1791FFE7-9673-4989-A15F-7FFBA3F3D03C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A775915C-27B3-4DCD-AEDE-A4F622112B14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A775915C-27B3-4DCD-AEDE-A4F622112B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A775915C-27B3-4DCD-AEDE-A4F622112B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A775915C-27B3-4DCD-AEDE-A4F622112B14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
