@@ -6,7 +6,7 @@
     <Product>CT Extensoin Method</Product>
     <PackageReleaseNotes>Test a extension method of Guid</PackageReleaseNotes>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 

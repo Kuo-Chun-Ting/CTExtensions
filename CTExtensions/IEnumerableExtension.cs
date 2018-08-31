@@ -7,9 +7,9 @@ namespace CTExtensions
 {
     public static class IEnumerableExtension
     {
-        public static bool HasItem<TSource>(this IEnumerable<TSource> ieInterface)
+        public static bool HasItem<TSource>(this IEnumerable<TSource> source)
         {
-            if (ieInterface.Count() > 0)
+            if (source.Count() > 0)
             {
                 return true;
             }
