@@ -1,0 +1,1 @@
+dotnet nuget push CTExtensions.1.0.6.nupkg -k 6819d58d-f013-4bbb-a6aa-76eca1dfee18 -s https://www.myget.org/F/ct_extension_method/api/v2/package

@@ -4,6 +4,11 @@ namespace CTExtensions
 {
     public static class GuidExtension
     {
+        /// <summary>
+        /// Check if the given guid is null or empty
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public static bool NullOrEmpty(this Guid id)
         {
             if (id == null)
@@ -20,6 +25,11 @@ namespace CTExtensions
             return false;
         }
 
+        /// <summary>
+        /// Check if the given guid is null or empty
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public static bool NullOrEmpty(this Guid? id)
         {
             if (!id.HasValue)
