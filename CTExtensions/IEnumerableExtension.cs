@@ -10,14 +10,18 @@ namespace CTExtensions
     {
         public static bool HasItem<TSource>(this IEnumerable<TSource> source)
         {
-            if (source.Count() > 0)
+            if (source != null)
             {
-                return true;
+                if (source.Count() > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
         /// <summary>
