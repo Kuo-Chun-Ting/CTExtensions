@@ -14,14 +14,14 @@ namespace CTExtensions
         /// <param name="propName">the property name you want to get</param>
         /// <param name="isRemove">whether delete the property after getting</param>
         /// <returns></returns>
-        public static string GetStringProperty(this JObject jsonProperties, string propName, bool isRemove = false)
+        public static T GetProperty<T>(this JObject jsonProperties, string propName, bool isRemove = false)
         {
             try
             {
-                var jToken = jsonProperties?.GetValue(propName);
+                var jToken = jsonProperties.GetValue(propName);
                 if (jToken != null)
                 {
-                    var value = jToken?.ToString();
+                    var value = jToken.ToObject<T>();
 
 
                     if (isRemove)
@@ -32,11 +32,35 @@ namespace CTExtensions
 
                     return value;
                 }
-                return null;
+                return default(T);
             }
             catch (Exception)
             {
-                return null;
+                return default(T);
+            }
+        }
+
+        /// <summary>
+        /// 新增一屬性到JObject中
+        /// </summary>
+        /// <param name="jObject"></param>
+        /// <param name="property"></param>
+        /// <param name="value"></param>
+        public static bool AddProperty(this JObject jObject, string property, object value)
+        {
+            try
+            {
+                if (jObject?[property] != null)
+                {
+                    jObject.Remove(property);
+                }
+                var jToken = JToken.FromObject(value);
+                jObject.Add(property, jToken);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
     }

@@ -12,30 +12,35 @@ namespace CTExtensions.TestConsole
             Console.WriteLine("Hello CTExtensions!");
 
             JObject json = new JObject();
-            json.Add("Prop1", "str1");
-            json.Add("Prop2", "str2");
-            json.Add("Prop3", 3);
+            json.AddProperty("Prop1", "str1");
+            json.AddProperty("Prop2", DateTime.Now);
+            json.AddProperty("Prop3", 3);
+            json.AddProperty("Prop4", Guid.NewGuid());
 
 
-            var str1 = json.GetStringProperty("Prop1");
-            var str2 = json.GetStringProperty("Prop2", true);
+            var str1 = json.GetProperty<string>("Prop1");
+            var str2 = json.GetProperty<string>("Prop2", true);
 
 
             Console.WriteLine($"{str1}  {str2}");
 
 
-            if (json.GetStringProperty("Prop1") == str1)
+            if (json.GetProperty<string>("Prop1") == str1)
             {
                 Console.WriteLine($"Prop1屬性還在");
             }
 
-            if (json.GetStringProperty("Prop2") == null)
+            if (json.GetProperty<string>("Prop2") == null)
             {
                 Console.WriteLine($"Prop2屬性已移除");
             }
 
-            var int3 = json.GetStringProperty("Prop3");
+            var int3 = json.GetProperty<int>("Prop3");
             Console.WriteLine(int3);
+
+            var dat4 = json.GetProperty<Guid>("Prop4");
+            Console.WriteLine(dat4);
+
 
 
             Console.ReadKey();
