@@ -54,7 +54,7 @@ namespace CTExtensions
                 {
                     jObject.Remove(property);
                 }
-                var jToken = JToken.FromObject(value);
+                var jToken = value != null ? JToken.FromObject(value) : null;
                 jObject.Add(property, jToken);
                 return true;
             }

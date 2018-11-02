@@ -16,6 +16,7 @@ namespace CTExtensions.TestConsole
             json.AddProperty("Prop2", DateTime.Now);
             json.AddProperty("Prop3", 3);
             json.AddProperty("Prop4", Guid.NewGuid());
+            json.AddProperty("Prop5", null);
 
 
             var str1 = json.GetProperty<string>("Prop1");
