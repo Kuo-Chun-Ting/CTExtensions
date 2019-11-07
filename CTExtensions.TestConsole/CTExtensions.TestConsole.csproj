@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CTExtensions\CTExtensions.csproj" />
+    <PackageReference Include="CTExtensions" Version="1.0.17" />
   </ItemGroup>
 
 </Project>
